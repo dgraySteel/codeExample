@@ -1,0 +1,8 @@
+<a>
+  <h1>List</h1>
+  <div class="card bg-info text-white" #item *ngFor="let result of results" (click)="focusOn(result)">
+   {{result.account_number}} {{result.firstname}} {{result.lastname}}
+   <br>
+   {{result.state}} {{result.latitude}}  {{result.longitude}}
+  </div>
+</a>

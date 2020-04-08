@@ -1,0 +1,7 @@
+<a [routerLink]="['/']">
+  <h1>Filters</h1>
+  <div *ngFor="let filter of filters" (click)="filterResults(filter)">
+    {{filter}}
+  </div>
+  <button *ngIf="filters.length > 0" class="btn btn-primary" (click)="resetFilters()" >RESET</button>
+</a>
